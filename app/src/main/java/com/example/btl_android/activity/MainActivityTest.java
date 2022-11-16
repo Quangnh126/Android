@@ -1,4 +1,4 @@
-package com.example.btl_android;
+package com.example.btl_android.activity;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.ViewFlipper;
 
 import com.bumptech.glide.Glide;
+import com.example.btl_android.R;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
