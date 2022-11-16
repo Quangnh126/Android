@@ -1,18 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scaleX="1.25"
+    android:scaleY="1.1"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleY="0.8"
+        android:translationY="-10sp"
+        android:background="@drawable/im3"
+         />
+
+    <ImageView
+        android:id="@+id/banner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_below="@+id/banner1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/im6"
+        android:scaleX="0.95"
+        android:scaleY="0.85"
+        android:translationY="-35sp" />
+
+    <ImageButton
+        android:id="@+id/nutmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.7"
+        android:scaleY="0.8"
+        android:translationX="35sp"
+        android:translationY="30sp"
+        app:srcCompat="@drawable/iconbar" />
+
+    <ImageButton
+        android:id="@+id/giohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        android:scaleY="0.9"
+        android:translationX="330sp"
+        android:translationY="30sp"
+        app:srcCompat="@drawable/im1" />
+
+    <TextView
+        android:id="@+id/sanphammoinhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner2"
+        android:textColor="#C85F0E"
+        android:textSize="18sp"
+        android:translationX="60sp"
+        android:translationY="-40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sản phẩm mới nhất" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/sanpham1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sanphammoinhat"
+        android:translationX="60sp"
+        android:translationY="-35sp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/sanpham2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sanphammoinhat"
+        android:translationX="220sp"
+        android:translationY="-35sp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/pinsacduphong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sanpham1"
+        android:translationX="220sp"
+        android:translationY="-30sp"
+        tools:text="Pin sạc dự phòng" />
+
+    <TextView
+        android:id="@+id/tainghe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sanpham2"
+        android:translationX="60sp"
+        android:translationY="-30sp"
+        tools:text="Tai nghe Bluetooth" />
+
+    <TextView
+        android:id="@+id/giatien1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tainghe"
+        android:text="Giá tiền"
+        android:translationX="60sp"
+        android:translationY="-32sp" />
+
+    <TextView
+        android:id="@+id/giatien2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tainghe"
+        android:text="Giá tiền"
+        android:translationX="220sp"
+        android:translationY="-32sp" />
+
+    <TextView
+        android:id="@+id/sotien1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tainghe"
+        android:text="3500000"
+        android:translationX="270sp"
+        android:translationY="-32sp" />
+
+    <TextView
+        android:id="@+id/sotien2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tainghe"
+        android:text="3500000 "
+        android:translationX="110sp"
+        android:translationY="-32sp" />
+
+
+</RelativeLayout>

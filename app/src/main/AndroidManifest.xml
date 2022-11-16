@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+
+
     <application
         android:allowBackup="true"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -32,7 +34,18 @@
         <activity
             android:name=".MainActivity"
             android:exported="false">
+        </activity>
 
+
+<!--       T Code tu day nhe bro-->
+        <activity
+            android:name=".MainActivityTest"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
