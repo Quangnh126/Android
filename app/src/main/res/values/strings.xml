@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">btl_android</string>
+    <string name="gi_25000">Giá: 25000 đ</string>
+    <string name="th_m_vao_gi_h_ng">Thêm vao giỏ hàng</string>
 </resources>
